@@ -1,0 +1,9 @@
+
+server.port=2023
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/vn?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.show-sql=true

@@ -1,0 +1,5 @@
+package com.retailer.warehouse.service;
+
+public interface warehouseService {
+
+}

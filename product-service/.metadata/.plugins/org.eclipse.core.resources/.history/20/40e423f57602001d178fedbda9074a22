@@ -1,0 +1,14 @@
+package com.retailer.product.service;
+
+import org.springframework.stereotype.Service;
+
+import com.retailer.product.model.Products;
+
+@Service
+public interface ProductService {
+
+	Products save(Products products);
+
+	Products getAll();
+
+}

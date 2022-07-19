@@ -1,0 +1,22 @@
+package com.retailer.warehouses.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.retailer.warehouses.model.Warehouses;abstract
+@Component
+public class WarehouseServiceImpl implements WarehousesService {
+
+	@Autowired
+	private WarehousesService warehousesService;
+	@Override
+	public Warehouses save(Warehouses warehouses) {
+		// TODO Auto-generated method stub
+		return warehousesService.save(warehouses);
+	}
+	@GetMapping("/test")
+	public String test() {
+	return "working fine has expeted..good";
+	}
+}

@@ -1,0 +1,12 @@
+package com.retailer.warehouse.services;
+
+import org.springframework.stereotype.Service;
+
+import com.retailer.warehouse.model.Warehouses;
+
+@Service
+public interface WarehousesService {
+
+	Warehouses save(Warehouses products);
+
+}

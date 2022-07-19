@@ -1,0 +1,17 @@
+package com.retailer.warehouses.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.retailer.warehouse.repository.WarehouseRepository;
+import com.retailer.warehouses.model.Warehouses;abstract
+public class WarehouseServiceImpl implements WarehousesService {
+
+	@Autowired
+	private WarehouseRepository productRepositiry;
+	@Override
+	public Warehouses save(Warehouses warehouses) {
+		// TODO Auto-generated method stub
+		return productRepositiry.save(warehouses);
+	}
+
+}

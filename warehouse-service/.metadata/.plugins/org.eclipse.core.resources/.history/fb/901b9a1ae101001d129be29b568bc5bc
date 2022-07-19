@@ -1,0 +1,13 @@
+package com.retailer.warehouse.service;
+
+import com.retailer.warehouse.model.Warehouses;
+
+public class WarehouseServiceImpl implements warehouseService {
+
+	@Override
+	public Warehouses save(Warehouses warehouses) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
