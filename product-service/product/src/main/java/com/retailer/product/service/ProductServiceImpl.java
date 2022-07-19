@@ -3,7 +3,6 @@ package com.retailer.product.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.parsing.ProblemReporter;
 import org.springframework.stereotype.Component;
 
 import com.retailer.product.model.Products;
@@ -22,7 +21,13 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<Products> getAll() {
 		
-		return productRepositiry.findAll();
-	}
+//		return productRepositiry.findAll();
+	
+		return productRepositiry.productNameNotNull();
+}
+//	public Products getProductName(String name) {
+//		return productRepositiry.productNameNotNull(name);
+//	
+//	}
 
 }

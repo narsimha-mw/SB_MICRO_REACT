@@ -5,7 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.lang.NonNull;
 
 @Entity
 @Table(name="retailer_product")
@@ -17,15 +21,18 @@ public class Products {
 	private Integer productId;
 	
 	@Column(name="product_name")
+	@NonNull
 	private String productName;
 	
 	@Column(name="product_desc")
 	private String productDescription;
 	
 	@Column(name="product_price")
+	@NonNull
 	private Double productPrice;
 	
 	@Column(name="product_stock")
+	@NonNull
 	private Long productStock;
 
 	public Integer getProductId() {
